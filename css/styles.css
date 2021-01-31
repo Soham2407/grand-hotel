@@ -446,6 +446,58 @@ body {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
 }
 
+.room-card-1 {
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+}
+
+.room-card-2 {
+  animation-name: moveInRight;
+  animation-duration: 3s;
+}
+
+.room-card-3 {
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+}
+
+.room-card-4 {
+  animation-name: moveInRight;
+  animation-duration: 3s;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .room-img {
   width: 100%;
 }
